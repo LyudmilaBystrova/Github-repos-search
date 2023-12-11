@@ -83,9 +83,7 @@ function renderRepositoryList() {
         repositoryList.appendChild(listItem);
         listItem.onclick = deleteRepository;
 
-     /*   button.addEventListener("click", function(){
-            deleteRepository(${index});
-        })*/
+
     });
 }
 
