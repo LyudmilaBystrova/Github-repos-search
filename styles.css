@@ -70,7 +70,7 @@
     position: absolute;
     width: 4px;
     height: 40px;
-    background-color: orangered;
+    background-color: darkred;
 }
 
 .delete-button::before {
@@ -85,7 +85,7 @@
     width: 75%;
     margin: 40px auto;
     padding: 0;
-    background-color: darkmagenta;
+    background-color: mediumpurple;
 }
 
 .repositoryList li {
