@@ -1,0 +1,97 @@
+:root {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+.container {
+    background-color: grey;
+    margin: 150px auto;
+    padding: 40px;
+    max-width: 800px;
+
+}
+
+.autocomplete {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchInput {
+    margin: 50px auto 0;
+    width: 75%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.options {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: lightgray;
+
+}
+
+.options li {
+    display: flex;
+    list-style: none;
+    height: 60px;
+    font-size: 1.75rem;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid black;
+
+
+}
+
+.delete-button {
+    position: absolute;
+    top: 31px;
+    right: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.delete-button::before,
+.delete-button::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    background-color: orangered;
+}
+
+.delete-button::before {
+    transform: rotate(45deg);
+}
+
+.delete-button::after {
+    transform: rotate(-45deg);
+}
+
+.repositoryList {
+    width: 75%;
+    margin: 40px auto;
+    padding: 0;
+    background-color: darkmagenta;
+}
+
+.repositoryList li {
+    position: relative;
+    list-style: none;
+    font-size: 1.4rem;
+    padding: 10px;
+    border: 1px solid black;
+}
