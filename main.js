@@ -5,7 +5,7 @@ const repositoryList = document.querySelector(".repositoryList");
 
 let addedRepositories = [];
 
-searchInput.addEventListener('input', debounce(fetchRepositories, 300));
+searchInput.addEventListener('input', debounce(fetchRepositories, 400));
 
 function fetchRepositories() {
     const query = searchInput.value.trim();
