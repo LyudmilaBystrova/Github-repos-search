@@ -49,12 +49,14 @@ function addRepository(repository) {
 
 
 function deleteRepository(event) {
-    let target = event.target;
+    const target = event.target;
     const repositoryItem = target.closest(".repositoryList li");
-    if (target.className === "delete-button")
-        repositoryList.removeChild(repositoryItem);
-    else {
-        return;
+    if (target.classList.contains("delete-button")) {
+        const repositoryIndex = Array.from(repositoryList.children).indexOf(repositoryItem);
+        if (repositoryIndex !== -1) {
+            addedRepositories.splice(repositoryIndex, 1);
+            repositoryList.removeChild(repositoryItem);
+        }
     }
 }
 function renderRepositoryList() {
